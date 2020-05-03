@@ -1,0 +1,11 @@
+add_sources(
+	basicdefs.h
+	ChartWindow.h
+	ScopeRedirect.h
+	Thread.h
+	Writer.h
+	Reader.h
+	WorkerThread.h
+	ThreadDispatcher.h
+	File.h
+)

@@ -1,0 +1,15 @@
+# https://stackoverflow.com/questions/17653738/recursive-cmake-search-for-header-and-source-files
+macro(add_sources)
+	file(RELATIVE_PATH _relPath "${PROJECT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}")
+	foreach (_src ${ARGN})
+		if (_relPath)
+			list (APPEND sources "${_relPath}/${_src}")
+		else()
+			list (APPEND sources "${_src}")
+		endif()
+	endforeach()
+	if (_relPath)
+		# propagate sources to parent directory
+		set(sources ${sources} PARENT_SCOPE)
+	endif()
+endmacro(add_sources)

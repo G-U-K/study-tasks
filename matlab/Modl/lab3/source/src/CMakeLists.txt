@@ -1,0 +1,12 @@
+add_sources(
+	main.cpp
+	ChartWindow.cpp
+	ChartWindow.ui
+	ScopeRedirect.cpp
+	Thread.cpp
+	Writer.cpp
+	Reader.cpp
+	WorkerThread.cpp
+	ThreadDispatcher.cpp
+	File.cpp
+)

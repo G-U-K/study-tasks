@@ -17,3 +17,8 @@ end
 win_rate = victories / games_n;
 figure
 plot(moves,win_rate*100),grid
+xlabel('Количество ходов пройденных в лабиринте')
+ylabel('Статистическая вероятность выигрыша')
+
+
+

@@ -1,8 +1,6 @@
 function result = Modl_lab5_var2_p1_combination(iteration,items,nitems,combinations)
 % Функция формирует уникальную комбинацию из заданных элементов
-% Modl_lab5_var2_p1_combination(
-% 0:combinations-1,[1:n],nitems=n,combinations=prod(1:n)
-% )
+% Modl_lab5_var2_p1_combination(0:combinations-1,[1:n],nitems=n,combinations=prod(1:n))
 
 if nitems ==1
     result = items;

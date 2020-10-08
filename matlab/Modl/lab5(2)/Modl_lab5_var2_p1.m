@@ -33,7 +33,6 @@ end
 ends = zeros(1,n);
 % текущее лучшее время для комбинации solution
 best_result = inf;
-
 % параметры для проверки всех комбинаций
 items = 1:m;
 nitems = length(items);

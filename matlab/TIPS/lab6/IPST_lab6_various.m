@@ -13,8 +13,8 @@ count=0;
 while(~isempty(vector))
 %     исключаем из вектора числа
 %     которые равны первому
-%     vector = vector(abs(1 - vector./vector(1))<eps.*10); альтернативное
-    vector = vector(vector~=vector(1));
+    vector = vector(abs(1 - vector./vector(1))<eps.*10); % альтернативное
+%     vector = vector(vector~=vector(1));
     count = count+1;
 end
 end

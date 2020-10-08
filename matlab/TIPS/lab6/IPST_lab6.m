@@ -16,7 +16,13 @@ sz = size(matrix);cols=sz(2);
 regime = zeros(1,cols);
 
 for iter = 1:cols
-    regime(iter) = IPST_lab6_various(matrix(:,iter));
+    regime(iter) = length(uniquetol(matrix(:,iter), 1e-2));
 end
 regime(regime>bound) = 99;
+
+x=linspace(.0,2.5,cols);
+figure(3)
+stem(x, regime)
+ylim([0, 100])
+
 end

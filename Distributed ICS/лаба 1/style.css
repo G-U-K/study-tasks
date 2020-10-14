@@ -1,0 +1,88 @@
+body {
+  background-color: DarkSalmon;
+  color: #1c0e54;
+  padding: 20px;
+  min-width: 640px;
+}
+
+h6,h5 {
+  text-align: right;
+  font-size: 2pt;
+  /* не будет применено,т.к. приоритет отойдет стилю,
+  подключенному через тег <style> */
+}
+h5 {
+  font-size: 17pt;
+}
+
+img {
+  box-shadow: 32px 16px 10px -6px;
+}
+
+#li_0 {
+  letter-spacing: 5px;
+}
+
+.li_sparced {
+  word-spacing: 2.1em;
+}
+
+/* селектор с псевдоклассом - выбор первой буквы элемента списка*/
+li::first-letter {
+  color: Blue;
+  font-size: 1.8em;
+  font-style: italic;
+}
+
+/* декорируем каждый третий начиная со второго элемент списка*/
+li:nth-child(3n+2) {
+  text-decoration: overline;
+}
+/*но последний элемент декорируем по-другому*/
+li:nth-last-child(1) {
+  text-decoration: underline;
+}
+
+.handmaden_img {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  /* background-color: silver; */
+  z-index: 1;
+}
+.handmaden_img div {
+  position: absolute;
+  background-color: Black;
+  border-color: Black;
+  z-index: 2;
+}
+#dot_0 {
+  right: 36%;
+  left: 36%;
+  bottom: 36%;
+  top: 36%;
+  border-radius: 50%;
+}
+#ring_0 {
+  background-color: Transparent;
+  right: 8%;
+  left: 8%;
+  bottom: 8%;
+  top: 8%;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 30px;
+}
+#v_line_0 {
+  right:48%;
+  left:48%;
+  top:0;
+  bottom: 0;
+}
+#h_line_0 {
+  right: 0;
+  left: 0;
+  top: 48%;
+  bottom: 48%;
+}

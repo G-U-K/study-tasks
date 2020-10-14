@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style media="screen">
+            h6,h5 {
+              text-align: center;
+              font-size: 15pt;
+              font-weight: 800;
+              font-family: cursive;
+              font:Comic Sans MS;
+            }
+            h5 {
+              font-size: 17pt;
+            }
+
+            #my_caption {
+              border-radius: 10%;
+              border-style: double;
+              border-width: thick;
+              padding: 3px 40px;
+              border-color: silver;
+              text-align: center;
+              margin-left: 20px;
+              /*хорошо комбинируется со свойством display, которое укажем уже в теге*/
+              color: Red;
+              /* не будет применено, т.к. приоритет отойдет стилю,
+              указанному сразу в теге */
+            }
+        </style>
+        <title> Лабораторная работа №1</title>
+    </head>
+    <body>
+        <h1  align="center"> Лабораторная работа №1</h1>
+        <h2  align="center"> Язык разметки гипертекста HTML </h2>
+        <h3 align="center"> Выполнили: Коротаева Анна, Назьмов Александр</h3>
+        <h4  align="center"> Вариант 4</h4>
+
+        <hr>
+        <h5> Ссылки </h5>
+        <p><a href="http://htmlbook.ru/html/a">Ссылка на внешнюю страницу</a></p>
+        <p><a href="#task">Ссылка на задание по вариантам</a></p>
+        <h5> Пример использования тега pre </h5>
+        <pre>
+________________**********
+_______________**_*****__*****
+______________*__*_____**_____*
+______________*__*___##__##__*
+______________*__**__##__##_**
+______________*_*__***_____**_*
+_____________*__*_____*****___*
+____________*____*______*_____*
+____________*____*____________*
+___________*______*____________****
+__________*_______*____________*___**
+________*****_____*____________**____**
+______**________**______________***____*
+____**____**__**________________*__*____*
+__**____**__**__________________*___*___*
+_*____***__*_____________________*___*__*
+*____*_*__*______________________*____*_*
+*___*__*_*________________________*____**
+*__*___**__________________________*
+*__*___*___________________________*
+*_*____*___________________________*
+*______*___________________________*
+________*__________________________*
+_________*________________________*
+_________*_______________________*
+__________**____________________*__****
+____________*______________**___*********
+____________*_________*****__*_*********
+___________**____*****______*********
+_________********___________******
+_______***********
+________***********
+        </pre>
+        <details>
+            <summary>Пример использованияя тегов details, summary, mark и time</summary>
+            <p><time>1957-10-04</time> запущен первый искусственный <mark>спутник Земли </mark>.</p>
+        </details>
+        <h5> Различие блочных и строчных тегов на примере тегов div и span </h5>
+        <p> Блочные теги div </p>
+        <div>
+            <figure>
+                <img src="images.jpg" alt="альтернативный текст">
+                <figcaption id="my_caption" style="color: #11f09e; display:inline-block;">Котик </figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img src="images%20(1).jpg" alt="альтернативный текст">
+                <figcaption>Котик </figcaption>
+            </figure>
+        </div>
+        <p> Строчные теги span</p>
+        <span> <img src="images%20(2).jpg"></span>
+        <span> И это тоже котик </span>
+        <hr>
+        <p><a name="task"></a></p>
+        <h5> Задание по вариантам</h5>
+        <ol type='i' start='100'>
+            <li> Нумерованный список, начинающийся с «с» (римские цифры) </li>
+            <li> Tаблица размером 3х3, две любые ячейки объединены по горизонтали и две любые ячейки объединены по вертикали </li>
+            <li> Форма, содержащая элементы (см. рисунок ниже) и кнопки «Отправить» и «Сбросить» </li>
+            <li>Элемент списка</li>
+            <li>Элемент списка</li>
+            <li class="li_sparced">Слова далеко друг от друга</li>
+            <li id="li_0">А тут между буквами много места</li>
+            <li class="li_sparced">Тут тоже слова далеко</li>
+            <li style="line-height: 70px;">Большие межстрочные интервалы</li>
+            <li>Элемент списка</li>
+            <li>"Элемент списка"</li>
+        </ol>
+
+        <h5 align="center"> Таблица </h5>
+        <table align="center" border="1" cellpadding="5" width="80%">
+            <tr><th rowspan="2"> по вертикали </th> <th colspan="2"> по горизонтали</th></tr>
+            <tr style="background-color:#ffffcc" >  <td> 2 </td> <td> 3 </td></tr>
+            <tr><td> 11</td> <td> 2 </td> <td> 3 </td></tr>
+        </table>
+
+        <div>
+            <h5 align="center"> Форма </h5>
+            <form>
+                <fieldset>
+                    <legend>Форма</legend>
+                    <p><input type="checkbox" name="a" value="HTML"> HTML</p>
+                    <p><input type="checkbox" name="a" value="CSS" checked> CSS</p>
+                    <p><input type="checkbox" name="a" value="JavaScript" checked> JavaScript</p>
+                    <p> E-mail:
+                      <br>
+                      <!-- в пустом поле ввода будет написано somebody@host.ru в качестве подсказки -->
+                        <input name="a" placeholder="somebody@host.ru">
+                        <input type="submit">
+                      <br>
+                        <input type="reset">
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        <hr>
+        <h6>Изображение с использованием свойств css</h6>
+        <div class="handmaden_img">
+          <div id="dot_0"></div>
+          <div id="ring_0"></div>
+          <div id="v_line_0"></div>
+          <div id="h_line_0"></div>
+        </div>
+    </body>
+</html>

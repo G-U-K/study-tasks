@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega324PB"</DEVICE>
+ <WORKING_DIR>c:\users\1\Documents\Atmel Studio\7.0\MC_labs_by_GUK\MC_labs_by_GUK\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>c:\users\1\Documents\Atmel Studio\7.0\MC_labs_by_GUK\MC_labs_by_GUK\lab 3\lab_3_p_7.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m324PBdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>c:\users\1\Documents\Atmel Studio\7.0\MC_labs_by_GUK\MC_labs_by_GUK\Debug\MC_labs_by_GUK.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>MC_labs_by_GUK.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>MC_labs_by_GUK.map</FILE>
+  <FILE>MC_labs_by_GUK.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <Start><FILE>c:\users\1\Documents\Atmel Studio\7.0\MC_labs_by_GUK\MC_labs_by_GUK\lab 3\lab_3_p_7.asm</FILE><LINE>27</LINE></Start>
+  <Loop1><FILE>c:\users\1\Documents\Atmel Studio\7.0\MC_labs_by_GUK\MC_labs_by_GUK\lab 3\lab_3_p_7.asm</FILE><LINE>33</LINE></Loop1>
+  <End><FILE>c:\users\1\Documents\Atmel Studio\7.0\MC_labs_by_GUK\MC_labs_by_GUK\lab 3\lab_3_p_7.asm</FILE><LINE>41</LINE></End>
+ </LABELS>
+</ASSEMBLER_INFO>

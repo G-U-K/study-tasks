@@ -15,7 +15,7 @@
     <Name>MC_labs_by_GUK</Name>
     <RootNamespace>MC_labs_by_GUK</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
-    <EntryFile>$(MSBuildProjectDirectory)\lab 3\lab_3_p_7.asm</EntryFile>
+    <EntryFile>$(MSBuildProjectDirectory)\lab 3\lab_3_p_3.asm</EntryFile>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
     <CacheFlash>true</CacheFlash>
@@ -41,6 +41,18 @@
       </ToolNumber>
       <ToolName xmlns="">Simulator</ToolName>
     </com_atmel_avrdbg_tool_simulator>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+  <options />
+  <configurations />
+  <files />
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.47.0" />
+  </dependencies>
+</framework-data>
+    </AsfFrameworkConfig>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
@@ -75,6 +87,21 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Lab 1\lab_1_p_5b.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lab 3\lab_3_p_3.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lab 3\lab_3_p_1.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lab 3\lab_3_p_2.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lab 3\lab_3_p_4a.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lab 3\lab_3_p_4b.asm">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="lab 3\lab_3_p_5a.asm">
